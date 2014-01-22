@@ -5,52 +5,165 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<title>Multi-page template</title> 
+	<title>Electronic Components | Connectors | IT Solutions | Services | Avnet, Inc.</title> 
 	<link rel="stylesheet" href="themes/avenet.min.css" />
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css" />
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	 <script type = "text/javascript">
+          function displayImage(image) {
+              document.getElementById("headerImage").src = image;
+          }
+
+          function displayNextImage() {
+              x = (x == images.length - 1) ? 0 : x + 1;
+              displayImage(images[x]);           
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              displayImage(images[x]);           
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 3000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "images/two.jpg";
+          images[1] = "images/three.jpg";
+		  images[2] = "images/one.jpg";
+      </script>
 </head> 
 
 	
-<body> 
+<body onload = "startTimer()"> 
 
 <!-- Start of first page: #one -->
-<div data-role="page" id="one">
+<div data-role="page" id="home">
 	
 	<div data-role="header">
-		<div data-role="navbar" class="custom-navbar">
-			<ul>
-			<li><a href="avnet.html">Home</a></li>
-			<li><a href="careers.html">Careers</a></li>
-			<li><a href="about.html">About Us</a></li>
-			<li><a href="contact.html">Contact Us</a></li>
-		</ul>
-    </div><!-- /navbar -->
 		<div align="center"><font size=5>Avnet</font></div>
-		<div align="center"><font size=1>Electronic Components | Connectors | IT Solutions | Services</font></div>
+		<div data-role="navbar">
+			<ul>
+			<li><a href="#home"  >Home</a></li>
+			<li><a href="#career">Careers</a></li>
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#contact">Contact Us</a></li>
+			</ul>
+		</div><!-- /navbar -->
 	</div><!-- /header -->
 	
 	<div data-role="content" >	
-		 <img src="images/heading.png" width="100%"/>
+		 <img src="images/one.jpg" id="headerImage" width="100%"/>
 		​<p>Avnet, Inc. is one of the largest distributors of electronic components, computer products and embedded technology serving customers globally. 
 		 We accelerate our partners' success by connecting the world's leading technology suppliers with a broad base of customers to provide cost-effective, 
 		 value-added services and solutions.</p>
 		<p><a href="#two" data-role="button">Show page "two"</a></p>	
 		<p><a href="#popup" data-role="button" data-rel="dialog" data-transition="pop">Show page "popup" (as a dialog)</a></p>
 	</div><!-- /content -->
+	<div data-role="header">
+	<h1>Avnet Electronics Marketing</h1> 
+	</div>
+	<p>Electronic components and embedded computing, supply-chain and design-chain services for original equipment manufacturers and electronic manufacturing services providers.</p>
 	
-	<div data-role="footer" data-theme="a">
-		<h4>Accelerating Your Success</h4>
-	</div><!-- /footer -->
+	<div data-role="header">
+	<h1>Avnet Technology Solutions</h1> 
+	</div>
+	<p>Enterprise computing products, services, solutions and market enablement for VARs, ISVs, systems integrators and non-PC OEMs.</p>
+	
+	<div data-role="header">
+	<h1>Avnet Services</h1> 
+	</div>
+	<p>Business, IT, lifecycle and education solutions that help you broaden your opportunities and grow your business throughout the IT lifecycle.​​</p>
+	<div data-role="header">
+	<h1>Avnet Logistics</h1> 
+	</div>
+	<p>Provides specialized supply chain and logistics services to the global electronics industry, driving asset velocity, customer satisfaction and total cost reduction for customers.​​​</p>
+	
 </div><!-- /page one -->
 
 
 <!-- Start of second page: #two -->
-<div data-role="page" id="two">
+<div data-role="page" id="career">
 
 	<div data-role="header">
-		<h1>Two</h1>
+		<div align="center"><font size=5>Avnet</font></div>
+		<div data-role="navbar">
+			<ul>
+			<li><a href="#home" >Home</a></li>
+			<li><a href="#career" >Careers</a></li>
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#contact">Contact Us</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">	
+		<p><strong>Looking for a company?</strong> </p>
+		<blockquote>...that will recognize and appreciate what you have to offer as an employee? <br/><br/>...that knows for sure it&#39;s the employees—their focus and dedication—who have made it the global leader in its industry? <br/><br/>...that offers exciting and challenging opportunities in a fast-paced environment? <br/><br/>...with diverse <a href="https://career8.successfactors.com/career?company=Avnet" target="_blank">career offerings</a>, such as field sales, customer support, operations, IT, finance, legal, electronics design engineering, marketing and more?</blockquote>
+		<p>&#160;</p>
+		<p><strong>You&#39;re looking at Avnet:</strong></p>
+		<blockquote><ul><li><a href="http://news.avnet.com/index.php?s=20295&amp;item=126691" target="_blank">Named No. 1</a> in its industry on <em>Fortune</em>® magazine&#39;s &quot;Most Admired Companies&quot; for 2009, 2010, 2011, 2012 and 2013<br/></li>
+		<br/><li><a href="http://news.avnet.com/2008-12-11-Avnet-Receives-InfoWorld-100-Award-for-Fifth-Time-in-Six-Years" target="_blank">Named to InfoWorld 100</a> five times in six years<br/></li>
+		<br/><li>Avnet was recognized in 2009 and 2010 by <em>Newsweek</em> magazine in its <a href="http://greenrankings.newsweek.com/companies/view/avnet" target="_blank">Green Rankings</a> of the 500 largest U.S. companies<br/></li>
+		<br/><li>Ranked among <a href="http://news.avnet.com/index.php?s=20295&amp;item=126604" target="_blank">Top 100 in the InformationWeek 500</a> for eight consecutive years<br/></li>
+		<br/><li>Recipient of hundreds of global <a href="http://news.avnet.com/awards-and-recognition" target="_blank">Awards</a> from leading manufacturers in the electronics industry</li></ul></blockquote>
+		<p><strong>Where people development, operational excellence, and profitable growth are the three pillars</strong> that support Avnet&#39;s vision of delivering the highest value to our customers, suppliers, employees and shareholders as the premier technology marketing, distribution, and services company, globally.</p>
+		<p>We invite you to learn more about <a href="/en-us/about-us/Pages/default.aspx" target="_blank">Avnet</a>, our <a href="http://news.avnet.com/executive-biographies" target="_blank">management team</a>, the <a href="/en-us/about-us/Pages/products-solutions.aspx" target="_blank">products we distribute and solutions we offer</a> - and especially, <a href="/en-us/about-us/Pages/what-customers-say.aspx" target="_blank">what our customers are saying about us</a>.</p>
+		<p>If you want to know more about Avnet&#39;s long and storied history, as told by our founder, Charles Avnet, and each successive CEO, <a href="http://www.youtube.com/watch?v=vwnlPYoO9rA&amp;list=UUSRhR0c0FKZufE0w_OtdaOQ&amp;index=1&amp;feature=plcp" target="_blank">watch this</a>!</p>
+
+		
+	</div><!-- /content -->
+</div><!-- /page two -->
+
+<!-- Start of second page: #two -->
+<div data-role="page" id="about">
+
+	<div data-role="header">
+		<div align="center"><font size=5>Avnet</font></div>
+		<div data-role="navbar" class="custom-navbar">
+			<ul>
+			<li><a href="#home" >Home</a></li>
+			<li><a href="#career">Careers</a></li>
+			<li><a href="#about" >About Us</a></li>
+			<li><a href="#contact">Contact Us</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">	
+		<img alt="about_us_banner.jpg" src="images/about_us_banner.jpg" style="margin: 0px" width="100%"/><br/>One of the largest distributors of electronic components, computer products and embedded technology serving customers globally,&#160;Avnet provides a vital link in the technology supply chain.
+		<div>&#160;</div>
+		<div>Market needs and trends drive Avnet&#39;s product and services strategy, supported by a global infrastructure. Avnet brings a breadth and depth of <a href="/en-us/about-us/Pages/products-solutions.aspx">service capabilities</a>, such as supply-chain and design-chain services, logistics solutions, product assembly, device programming, computer system configuration and integration, and technical seminars - all in addition to its core distribution services.</div>
+		<div>&#160;</div>
+		<div>Through its innovative and entrepreneurial spirit, and its passion for customer service, Avnet assures customers and suppliers that they have chosen the right partner to accelerate their success.&#160;</div>
+		<div align="center"><img class="ms-rtePosition-1" alt="Avnet is Fortune Most Admired" src="images/fortune.jpg" style="margin: 5px" width=20%/><br/>For the fifth year in a row, Avnet is <a href="http://money.cnn.com/magazines/fortune/most-admired/2013/snapshots/2161.html">ranked</a> No. 1 in our industry in <em>Fortune</em>® magazine&#39;s list of &quot;Most Admired Companies.&quot; Read our <a href="http://news.avnet.com/index.php?s=20295&amp;item=126691">press release</a>.</div>
+		<div>&#160;</div>
+		<div>If you want to know more about Avnet&#39;s long and storied history, as told by our founder, Charles Avnet, and each successive CEO, <a href="http://www.youtube.com/watch?v=vwnlPYoO9rA&amp;list=UUSRhR0c0FKZufE0w_OtdaOQ&amp;index=1&amp;feature=plcp">watch this</a>!</div>
+		<div>&#160;</div>
+		<div>Contact Avnet today to learn more about one of the largest distributors of electronic components, computer products and embedded technology.</div>
+		<div>&#160;</div>
+		<div class="ms-rteFontSize-1"><em></em>&#160;&#160;</div>
+
+		
+	</div><!-- /content -->
+	
+</div><!-- /page two -->
+
+<!-- Start of second page: #two -->
+<div data-role="page" id="contact">
+
+	<div data-role="header">
+		<div align="center"><font size=5>Avnet</font></div>
+		<div data-role="navbar" class="custom-navbar">
+			<ul>
+			<li><a href="#home" >Home</a></li>
+			<li><a href="#career">Careers</a></li>
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#contact" >Contact Us</a></li>
+			</ul>
+		</div><!-- /navbar -->
 	</div><!-- /header -->
 
 	<div data-role="content" data-theme="a">	
@@ -61,9 +174,6 @@
 		
 	</div><!-- /content -->
 	
-	<div data-role="footer">
-		<h4>Accelerating Your Success</h4>
-	</div><!-- /footer -->
 </div><!-- /page two -->
 
 
