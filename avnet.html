@@ -26,7 +26,7 @@
           }
 
           function startTimer() {
-              setInterval(displayNextImage, 3000);
+              setInterval(displayNextImage, 4500);
           }
 
           var images = [], x = -1;
@@ -43,42 +43,63 @@
 <div data-role="page" id="home">
 	
 	<div data-role="header">
-		<div align="center"><font size=5>Avnet</font></div>
-		<div data-role="navbar">
+		<div>
+			<img src="images/avnetLongHeader.png" style="display:block" width="100%" height="80px"/>
+		</div>
+	</div><!-- /header -->
+	<div data-role="navbar">
 			<ul>
 			<li><a href="#home"  >Home</a></li>
 			<li><a href="#career">Careers</a></li>
 			<li><a href="#about">About Us</a></li>
 			<li><a href="#contact">Contact Us</a></li>
 			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /header -->
-	
+	</div><!-- /navbar -->
 	<div data-role="content" >	
 		 <img src="images/one.jpg" id="headerImage" width="100%"/>
 		​<p>Avnet, Inc. is one of the largest distributors of electronic components, computer products and embedded technology serving customers globally. 
 		 We accelerate our partners' success by connecting the world's leading technology suppliers with a broad base of customers to provide cost-effective, 
 		 value-added services and solutions.</p>
-		<p><a href="#popup" data-role="button" data-rel="dialog" data-transition="pop">Show page "popup" (as a dialog)</a></p>
-	
-	<div data-role="header">
-	<h1>Avnet Electronics</h1> 
+	<div class="ui-corner-all custom-corners">
+	  <div class="ui-bar ui-bar-a">
+		<div align="center"><h3>Avnet Electronics</h3></div>
+	  </div>
+	  <div class="ui-body ui-body-a">
+		<p>Electronic components and embedded computing, supply-chain and design-chain services for original equipment manufacturers and electronic manufacturing services providers.
+		<a href="#popup" data-role="button" data-rel="dialog" data-transition="pop" style="padding-top: 5px;padding-bottom: 5px;">Learn More</a></p>
+		
+	  </div>
 	</div>
-	<p>Electronic components and embedded computing, supply-chain and design-chain services for original equipment manufacturers and electronic manufacturing services providers.</p>
-	
-	<div data-role="header">
-	<h1>Avnet Technology</h1> 
+	<br/>
+	<div class="ui-corner-all custom-corners">
+	  <div class="ui-bar ui-bar-a">
+		<div align="center"><h3>Avnet Technology</h3></div>
+	  </div>
+	  <div class="ui-body ui-body-a">
+		<p>Enterprise computing products, services, solutions and market enablement for VARs, ISVs, systems integrators and non-PC OEMs.
+		<a href="#popup" data-role="button" data-rel="dialog" data-transition="pop" style="padding-top: 5px;padding-bottom: 5px;">Learn More</a></p>
+	  </div>
 	</div>
-	<p>Enterprise computing products, services, solutions and market enablement for VARs, ISVs, systems integrators and non-PC OEMs.</p>
-	
-	<div data-role="header">
-	<h1>Avnet Services</h1> 
+	<br/>
+	<div class="ui-corner-all custom-corners">
+	  <div class="ui-bar ui-bar-a">
+		<div align="center"><h3>Avnet Services</h3></div>
+	  </div>
+	  <div class="ui-body ui-body-a">
+		<p>Business, IT, lifecycle and education solutions that help you broaden your opportunities and grow your business throughout the IT lifecycle.​​
+		<a href="#sericespop" data-role="button" data-rel="dialog" data-transition="pop" style="padding-top: 5px;padding-bottom: 5px;">Learn More</a></p>
+	  </div>
 	</div>
-	<p>Business, IT, lifecycle and education solutions that help you broaden your opportunities and grow your business throughout the IT lifecycle.​​</p>
-	<div data-role="header">
-	<h1>Avnet Logistics</h1> 
+	<br/>
+	<div class="ui-corner-all custom-corners">
+	  <div class="ui-bar ui-bar-a">
+		<div align="center"><h3>Avnet Logistics</h3></div>
+	  </div>
+	  <div class="ui-body ui-body-a">
+		<p>Provides specialized supply chain and logistics services to the global electronics industry, driving asset velocity, customer satisfaction and total cost reduction for customers.​​​
+		<a href="#popup" data-role="button" data-rel="dialog" data-transition="pop" style="padding-top: 5px;padding-bottom: 5px;">Learn More</a></p>
+	  </div>
 	</div>
-	<p>Provides specialized supply chain and logistics services to the global electronics industry, driving asset velocity, customer satisfaction and total cost reduction for customers.​​​</p>
 	</div><!-- /content -->
 
 </div><!-- /page one -->
@@ -100,7 +121,16 @@
 
 	</div><!-- /header -->
 
-	<div data-role="content" data-theme="a">	
+	<div data-role="content" data-theme="a">
+		<div class="ui-corner-all custom-corners">
+			  <div class="ui-bar ui-bar-a">
+				<div align="center"><h3>Looking for a company?</h3></div>
+			  </div>
+			  <div class="ui-body ui-body-a">
+				<blockquote>...that will recognize and appreciate what you have to offer as an employee? <br/><br/>...that knows for sure it&#39;s the employees—their focus and dedication—who have made it the global leader in its industry? <br/><br/>...that offers exciting and challenging opportunities in a fast-paced environment? <br/><br/>...with diverse <a href="https://career8.successfactors.com/career?company=Avnet" target="_blank">career offerings</a>, such as field sales, customer support, operations, IT, finance, legal, electronics design engineering, marketing and more?</blockquote>
+				
+			  </div>
+		</div>	
 		<p><strong>Looking for a company?</strong> </p>
 		<blockquote>...that will recognize and appreciate what you have to offer as an employee? <br/><br/>...that knows for sure it&#39;s the employees—their focus and dedication—who have made it the global leader in its industry? <br/><br/>...that offers exciting and challenging opportunities in a fast-paced environment? <br/><br/>...with diverse <a href="https://career8.successfactors.com/career?company=Avnet" target="_blank">career offerings</a>, such as field sales, customer support, operations, IT, finance, legal, electronics design engineering, marketing and more?</blockquote>
 		<p>&#160;</p>
@@ -134,10 +164,18 @@
 	</div><!-- /header -->
 
 	<div data-role="content" data-theme="a">	
-		<p><img alt="about_us_banner.jpg" src="images/about_us_banner.jpg" style="margin: 0px" width="100%"/><br/>One of the largest distributors of electronic components, computer products and embedded technology serving customers globally,&#160;Avnet provides a vital link in the technology supply chain.</p>
+		<p>One of the largest distributors of electronic components, computer products and embedded technology serving customers globally,&#160;Avnet provides a vital link in the technology supply chain.</p>
+		<img alt="about_us_banner.jpg" src="images/about_us_banner.jpg" style="margin: 0px" width="100%"/>
 		<div><p>Market needs and trends drive Avnet&#39;s product and services strategy, supported by a global infrastructure. Avnet brings a breadth and depth of <a href="/en-us/about-us/Pages/products-solutions.aspx">service capabilities</a>, such as supply-chain and design-chain services, logistics solutions, product assembly, device programming, computer system configuration and integration, and technical seminars - all in addition to its core distribution services.</p></div>
 		<div><p>Through its innovative and entrepreneurial spirit, and its passion for customer service, Avnet assures customers and suppliers that they have chosen the right partner to accelerate their success.&#160;</p></div>
-		<div><p><img class="ms-rtePosition-1" alt="Avnet is Fortune Most Admired" src="images/fortune.jpg" style="margin: 5px" width="25%" height="25%" align="left"/><br/>For the fifth year in a row, Avnet is <a href="http://money.cnn.com/magazines/fortune/most-admired/2013/snapshots/2161.html">ranked</a> No. 1 in our industry in <em>Fortune</em>® magazine&#39;s list of &quot;Most Admired Companies.&quot; Read our <a href="http://news.avnet.com/index.php?s=20295&amp;item=126691">press release</a>.</p></div>
+		<ul data-role="listview" data-inset="true">
+			<li>
+				<img src="images/fortune.jpg">
+			<h2>Most Admired Companies</h2>
+			<font style="white-space:normal; font-size: small" ><p>For the fifth year in a row, Avnet is <a href="http://money.cnn.com/magazines/fortune/most-admired/2013/snapshots/2161.html">ranked</a> No. 1 in our industry in <em>Fortune</em>® magazine&#39;s list of &quot;Most Admired Companies.&quot; Read our <a href="http://news.avnet.com/index.php?s=20295&amp;item=126691">press release</a>.</font></p>
+			</li>
+		</ul>
+		
 		<div><p>If you want to know more about Avnet&#39;s long and storied history, as told by our founder, Charles Avnet, and each successive CEO, <a href="http://www.youtube.com/watch?v=vwnlPYoO9rA&amp;list=UUSRhR0c0FKZufE0w_OtdaOQ&amp;index=1&amp;feature=plcp">watch this</a>!<br/></p>
 		<p>Contact Avnet today to learn more about one of the largest distributors of electronic components, computer products and embedded technology.</p></div>
 
@@ -152,7 +190,7 @@
 <div data-role="page" id="contact">
 
 	<div data-role="header">
-		<div align="center"><font size=5>Avnet</font></div>
+		<div align="center"><img src="images/avnet.png"/><font size=5>Avnet</font></div>
 		<div data-role="navbar" class="custom-navbar">
 			<ul>
 			<li><a href="#home" >Home</a></li>
@@ -199,22 +237,37 @@
 </div><!-- /page two -->
 
 
-<!-- Start of third page: #popup -->
-<div data-role="page" id="popup">
+	<!-- Start of third page: #popup -->
+	<div data-role="page" id="sericespop">
 
-	<div data-role="header" data-theme="e">
-		<h1>Dialog</h1>
-	</div><!-- /header -->
+		<div data-role="header" data-theme="e">
+			<h1><font color="red">Services</font> for IT Solutions</h1>
+		</div><!-- /header -->
 
-	<div data-role="content" data-theme="d">	
-		<h2>Popup</h2>
-		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>		
-		<p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back to page "one"</a></p>	
-	</div><!-- /content -->
-	
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
+		<div data-role="content" data-theme="d">	
+			<p>Services are an integral part of a total IT solution. By leveraging Avnet’s extensive services resources, knowledge base and network, you can quickly and cost-effectively expand your offerings, seamlessly transforming your company into the single-source provider and trusted advisor customers need. Avnet Services gives companies in the Americas, Europe and Asia Pacific the knowledge and solutions required to pursue a wider range of opportunities, realize greater margins and develop recurring revenue by adding services and innovative technologies. With Avnet Services, we make IT solutions better. Let Avnet Services broaden your capabilities.</p>
+			<img src="images/Technology_Services_Wagon.jpg" align="center"/>		
+			<p><a href="#home" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back to Home Page</a></p>	
+		</div><!-- /content -->
+		<div data-role="footer">
+			<h4>Accelerating Your Success</h4>
+		</div><!-- /footer -->
+	</div>
+	<div data-role="page" id="popup">
+
+		<div data-role="header" data-theme="e">
+			<h1>Dialog</h1>
+		</div><!-- /header -->
+
+		<div data-role="content" data-theme="d">	
+			<h2>Popup</h2>
+			<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>		
+			<p><a href="#home" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back to Home Page</a></p>	
+		</div><!-- /content -->
+		<div data-role="footer">
+			<h4>Accelerating Your Success</h4>
+		</div><!-- /footer -->
+	</div>
 </div><!-- /page popup -->
 
 </body>
